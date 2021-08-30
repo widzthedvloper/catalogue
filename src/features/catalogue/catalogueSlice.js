@@ -1,16 +1,9 @@
-/* eslint-disable no-undef */
 /* eslint-disable no-param-reassign */
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { fetchCatalogue } from './catalogueAPI';
 
-const mydata = [{
-  id: 654959,
-  title: 'Pasta With Tuna',
-  image: 'https://spoonacular.com/recipeImages/654959-312x231.jpg',
-  imageType: 'jpg',
-}];
 const initialState = {
-  value: mydata,
+  value: [],
   status: 'idle',
 };
 

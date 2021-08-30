@@ -1,8 +1,8 @@
 /* eslint-disable import/prefer-default-export */
 export function fetchCatalogue() {
-  const catalogue = fetch('https://api.spoonacular.com/recipes/complexSearch?query=pasta&number=20&apiKey=c887fd95dcf34923b31915b722fe76c1')
+  const catalogue = fetch('https://www.themealdb.com/api/json/v1/1/search.php?f=b')
     .then(res => res.json())
-    .then(posts => posts.results)
+    .then(posts => posts.meals)
     .catch(error => { throw error; });
   return catalogue;
 }

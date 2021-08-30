@@ -1,5 +1,5 @@
 /* eslint-disable import/prefer-default-export */
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {
   fetchAsync,
@@ -10,25 +10,24 @@ export function CatalogueComponent() {
   const catalogue = useSelector(selectCatalogue);
   const dispatch = useDispatch();
 
-  const updateState = () => {
+  useEffect(() => {
     dispatch(fetchAsync());
-  };
+  }, []);
 
   const renderedCatalogue = catalogue.map(mealInfo => (
-    <div key={mealInfo.id}>
-      <h3>{mealInfo.title}</h3>
-      <img src={mealInfo.image} alt="pasta" />
+    <div key={mealInfo.idMeal}>
+      <h3>{mealInfo.strMeal}</h3>
+      <img src={mealInfo.strMealThumb} alt="pasta" />
       <br />
       <span>
         Order:
-        {mealInfo.id}
+        {mealInfo.idMeal}
       </span>
     </div>
   ));
   return (
     <>
       {renderedCatalogue}
-      <button onClick={() => updateState()} type="button">display Catalogue</button>
     </>
   );
 }
