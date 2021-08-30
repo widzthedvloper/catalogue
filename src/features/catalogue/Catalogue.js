@@ -1,6 +1,7 @@
 /* eslint-disable import/prefer-default-export */
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import {
   fetchAsync,
   selectCatalogue,
@@ -23,6 +24,7 @@ export function CatalogueComponent() {
         Order:
         {mealInfo.idMeal}
       </span>
+      <Link to={`/meal-page/${mealInfo.idMeal}`}>More details ...</Link>
     </div>
   ));
   return (
