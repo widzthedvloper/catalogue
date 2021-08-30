@@ -12,7 +12,7 @@ export function CatalogueComponent() {
 
   useEffect(() => {
     dispatch(fetchAsync());
-  }, []);
+  }, [catalogue]);
 
   const renderedCatalogue = catalogue.map(mealInfo => (
     <div key={mealInfo.idMeal}>
