@@ -9,7 +9,6 @@ import {
   filterCatalogue,
   selectCatalogue,
 } from './catalogueSlice';
-import '@fortawesome/fontawesome-free';
 
 export function CatalogueComponent() {
   const catalogue = useSelector(selectCatalogue);
