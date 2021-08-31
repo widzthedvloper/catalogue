@@ -32,7 +32,7 @@
 
 #### Big screen for details
 
-![ScreenShot](./bigScreendetailsPage.png)
+![ScreenShot](./bigScreenDetailsPage.png)
 
 #### Small screen for details
 
