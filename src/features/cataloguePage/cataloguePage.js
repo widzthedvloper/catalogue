@@ -59,10 +59,16 @@ function cataloguePage({ match }) {
     };
     hideInstroc = {
       display: 'block',
+      backgroundColor: '#0005',
+      color: '#fff',
+      fontWeight: 'bold',
     };
   } else {
     hide = {
       display: 'block',
+      backgroundColor: '#0005',
+      color: '#fff',
+      fontWeight: 'bold',
     };
     hideInstroc = {
       display: 'none',
@@ -72,15 +78,17 @@ function cataloguePage({ match }) {
   return (
     <>
       <div className="header">
-        <span role="button" tabIndex={0} onKeyDown={handleDisplay} onClick={() => handleDisplay()}>Ingrdients</span>
-        <span role="button" tabIndex={0} onKeyDown={handleDisplay} onClick={() => handleDisplay()}>Instructions</span>
+        <span className="btn" role="button" tabIndex={0} onKeyDown={handleDisplay} onClick={() => handleDisplay()}>Ingrdients</span>
+        <span className="btn" role="button" tabIndex={0} onKeyDown={handleDisplay} onClick={() => handleDisplay()}>Instructions</span>
       </div>
       <div className="card">
         <div style={styles}>
           <div style={hide}>
+            <h3>&#9733;Ingredients&#9733;</h3>
             {ingredient}
           </div>
           <div style={hideInstroc}>
+            <h3>&#9733;Instructions&#9733;</h3>
             {meal.strInstructions}
           </div>
         </div>
