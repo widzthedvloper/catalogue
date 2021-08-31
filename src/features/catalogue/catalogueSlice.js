@@ -19,11 +19,8 @@ export const catalogueSlice = createSlice({
   name: 'catalogue',
   initialState,
   reducers: {
-    fecthingCatalogue: (state, action) => {
+    filterCatalogue: (state, action) => {
       state.value = action.payload;
-    },
-    filterCatalogue: state => {
-      state.value = [];
     },
   },
   extraReducers: builder => {
@@ -33,7 +30,7 @@ export const catalogueSlice = createSlice({
   },
 });
 
-export const { fetchingCatalogue, filterCatalogue } = catalogueSlice.actions;
+export const { filterCatalogue } = catalogueSlice.actions;
 
 export const selectCatalogue = state => state.catalogue.value;
 
