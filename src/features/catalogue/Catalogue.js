@@ -1,5 +1,6 @@
 /* eslint-disable max-len */
 /* eslint-disable import/prefer-default-export */
+import './catalogue.css';
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
@@ -32,7 +33,7 @@ export function CatalogueComponent() {
   }, []);
 
   const renderedCatalogue = catalogue.map(mealInfo => (
-    <div key={mealInfo.idMeal}>
+    <div key={mealInfo.idMeal} className="card">
       <img src={mealInfo.strMealThumb} alt="pasta" />
       <br />
       <h3>{mealInfo.strMeal}</h3>
@@ -51,6 +52,8 @@ export function CatalogueComponent() {
         <span><i className="fas fa-search" /></span>
       </header>
       <input
+        className="search-input"
+        placeholder="Enter order Number or dish name!!!"
         value={catalogueFilter}
         onChange={e => setCatalogueFilter(e.target.value)}
       />
