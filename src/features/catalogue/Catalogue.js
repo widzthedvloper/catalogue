@@ -1,5 +1,4 @@
 /* eslint-disable max-len */
-/* eslint-disable import/prefer-default-export */
 import './catalogue.css';
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';

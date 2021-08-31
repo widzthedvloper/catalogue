@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders span with text correctly 1`] = `
+<span>
+  CATALOGUE RECEIPES
+</span>
+`;
+
+exports[`renders span with text correctly 2`] = `
+<h3>
+  Bakewell tart
+</h3>
+`;
+
+exports[`renders span with text correctly 3`] = `
+<h3>
+  Bread and Butter Puddind
+</h3>
+`;
+
+exports[`renders span with text correctly 4`] = `
+<h3>
+  Beef Wellington
+</h3>
+`;
+
+exports[`renders span with text correctly 5`] = `
+<h3>
+  Baingan Bharta
+</h3>
+`;
+
+exports[`renders span with text correctly 6`] = `
+<h3>
+  Beef Brisket Pot Roast
+</h3>
+`;
+
+exports[`renders span with text correctly 7`] = `
+<h3>
+  Beef Sunday Roast
+</h3>
+`;
+
+exports[`renders span with text correctly 8`] = `
+<h3>
+  Braised Beef Chilli
+</h3>
+`;
+
+exports[`renders span with text correctly 9`] = `
+<h3>
+  Beef stroganoff
+</h3>
+`;
+
+exports[`renders span with text correctly 10`] = `
+<h3>
+  Broccoli & Stilton soup
+</h3>
+`;
+
+exports[`renders span with text correctly 11`] = `
+<h3>
+  Bean & Sausage Hotpot
+</h3>
+`;
+
+exports[`renders span with text correctly 12`] = `
+<h3>
+  Banana Pancakes
+</h3>
+`;
+
+exports[`renders span with text correctly 13`] = `
+<h3>
+  Beef Dumpling Stew
+</h3>
+`;
+
+exports[`renders span with text correctly 14`] = `
+<h3>
+  Beef and Mustard Pie
+</h3>
+`;
