@@ -45,7 +45,7 @@ export function CatalogueComponent() {
   ));
   return (
     <>
-      <header>
+      <header className="header">
         <span><i className="fas fa-cog" /></span>
         <span>CATALOGUE RECEIPES</span>
         <span><i className="fas fa-search" /></span>
