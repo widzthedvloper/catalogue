@@ -14,7 +14,7 @@
 
 ## Watch the Live Version
 
-[Live Demo]( https://afternoon-hamlet-94028.herokuapp.com)
+[Live Demo](https://afternoon-hamlet-94028.herokuapp.com)
 
 ## ScreenShots
 
