@@ -1,44 +1,72 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# REACT Simple Blog Site
 
-## Available Scripts
+> This is a catalogue of recipes.  The app allows a user to filter through some meals by order number or name. It also allows you to see more details about each dish(Ingredients and instruction on how to make it).
 
-In the project directory, you can run:
+<p align="center">
+   <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white">
+   <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">
+   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
+   <img src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white">
+   <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white">
+</p>
 
-### `npm start`
+## Watch the Live Version
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[Live Demo](/#)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## ScreenShots
 
-### `npm test`
+### Main Pages
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Big screen
 
-### `npm run build`
+![ScreenShot](./bigScreenMainPage.png)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Small screen
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+![ScreenShot](./smallScreenMainPage.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Details Pages
 
-### `npm run eject`
+#### Big screen for details
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![ScreenShot](./bigScreendetailsPage.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Small screen for details
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![ScreenShot](./smallScreenDetailsPage.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Prerequisites
 
-## Learn More
+- JavaScript ES6
+- React
+- NodeJS
+- Code Editor(VScode)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone the reposatory by using the `git clone git@github.com:widzthedvloper/catalogue.git` command in your terminal
+2. `cd` into the clone reposatory
+3. Run `npm install or npm i`
+4. Open the code base using any code editor or your choice, preferably "visual studio code editor"
+5. Open the vscode terminal and run the application by typing `npm start` and hit enter.
+
+## Contributing
+
+This project was created for educational purposes
+
+👤 **Widzmarc Jean Nesly Phelle**
+
+- GitHub: [@widzthedvloper](https://github.com/widzthedvloper)
+- Twitter - [@widzthedvloper](https://twitter.com/widzthedvloper)
+- LinkedIn: [@widzthedvloper](https://www.linkedin.com/in/widzmarc-jean-nesly-phelle-252a26129/)
+
+### Show your support
+
+Give a ⭐️ if you like this project!
+
+## License
+
+This project is licensed under the MIT License
