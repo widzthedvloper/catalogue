@@ -82,6 +82,7 @@ function cataloguePage({ match }) {
         <span className="btn" role="button" tabIndex={0} onKeyDown={handleDisplay} onClick={() => handleDisplay()}>Instructions</span>
       </div>
       <div className="card">
+        <h2>{meal.strMeal}</h2>
         <div style={styles}>
           <div style={hide}>
             <h3>&#9733;Ingredients&#9733;</h3>
