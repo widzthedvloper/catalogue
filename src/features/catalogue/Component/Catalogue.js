@@ -8,6 +8,7 @@ import {
   filterCatalogue,
   selectCatalogue,
 } from '../Reducer/catalogueSlice';
+import Filter from '../Filter/Filter';
 
 export function CatalogueComponent() {
   const catalogue = useSelector(selectCatalogue);
@@ -57,6 +58,7 @@ export function CatalogueComponent() {
       />
       <button aria-label="filter the catalogue" type="button" onClick={() => filterArray()}><i className="fas fa-search" /></button>
       {renderedCatalogue}
+      <Filter catalogueFilter={catalogueFilter}/>
     </>
   );
 }
