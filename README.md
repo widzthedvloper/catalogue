@@ -1,6 +1,6 @@
-# REACT Simple Blog Site
+# REACT CATALOG OF RECIPES
 
-> This is a catalogue of recipes.  The app allows a user to filter through some meals by order number or name. It also allows you to see more details about each dish(Ingredients and instruction on how to make it).
+> This is a catalog of recipes.  The app allows a user to filter through some meals by order number or name. It also allows you to see more details about each dish(Ingredients and instructions on how to make it).
 
 <p align="center">
    <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white">
@@ -47,15 +47,15 @@
 
 ### Usage
 
-1. Clone the reposatory by using the `git clone git@github.com:widzthedvloper/catalogue.git` command in your terminal
-2. `cd` into the clone reposatory
+1. Clone the repository by using the `git clone git@github.com:widzthedvloper/catalogue.git` command in your terminal
+2. `cd` into the cloned repository
 3. Run `npm install or npm i`
-4. Open the code base using any code editor or your choice, preferably "visual studio code editor"
+4. Open the codebase using any code editor of your choice, preferably, visual studio code editor.
 5. Open the vscode terminal and run the application by typing `npm start` and hit enter.
 
 ## Contributing
 
-This project was created for educational purposes
+This project is for educational purposes.
 
 👤 **Widzmarc Jean Nesly Phelle**
 
@@ -69,4 +69,4 @@ Give a ⭐️ if you like this project!
 
 ## License
 
-This project is licensed under the MIT License
+MIT License
