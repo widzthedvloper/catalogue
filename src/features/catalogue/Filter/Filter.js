@@ -1,6 +1,13 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
+import {
+  fetchAsync,
+  filterCatalogue,
+} from '../Reducer/catalogueSlice';
 
-function Filter({ catalogueFilter }) {
+let myFilterArray;
+
+function Filter({ catalogueFilter, catalogue, dispatch }) {
   const strFilter = catalogueFilter || '';
 
   const myFilterCatalogue = catalogue.filter(meal => strFilter.toLowerCase() === meal.strMeal.toLowerCase() || strFilter.toLowerCase() === meal.idMeal);
@@ -12,9 +19,17 @@ function Filter({ catalogueFilter }) {
       dispatch(fetchAsync());
     }
   };
+
+  myFilterArray = filterArray;
     return (
         <div />
     )
 }
 
-export default Filter
+Filter.propTypes = {
+    catalogueFilter: PropTypes.string,
+    catalogue: PropTypes.array,
+    dispatch: PropTypes.func,
+}
+export default Filter;
+export { myFilterArray };

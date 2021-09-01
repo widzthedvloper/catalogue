@@ -5,27 +5,15 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import {
   fetchAsync,
-  filterCatalogue,
   selectCatalogue,
 } from '../Reducer/catalogueSlice';
-import Filter from '../Filter/Filter';
+import Filter, { myFilterArray } from '../Filter/Filter';
 
 export function CatalogueComponent() {
   const catalogue = useSelector(selectCatalogue);
   const dispatch = useDispatch();
 
   const [catalogueFilter, setCatalogueFilter] = useState('');
-  const strFilter = catalogueFilter || '';
-
-  const myFilterCatalogue = catalogue.filter(meal => strFilter.toLowerCase() === meal.strMeal.toLowerCase() || strFilter.toLowerCase() === meal.idMeal);
-
-  const filterArray = () => {
-    if (strFilter !== '' && myFilterCatalogue.length >= 1) {
-      dispatch(filterCatalogue(myFilterCatalogue));
-    } else {
-      dispatch(fetchAsync());
-    }
-  };
 
   useEffect(() => {
     dispatch(fetchAsync());
@@ -56,9 +44,9 @@ export function CatalogueComponent() {
         value={catalogueFilter}
         onChange={e => setCatalogueFilter(e.target.value)}
       />
-      <button aria-label="filter the catalogue" type="button" onClick={() => filterArray()}><i className="fas fa-search" /></button>
+      <button aria-label="filter the catalogue" type="button" onClick={() => myFilterArray()}><i className="fas fa-search" /></button>
       {renderedCatalogue}
-      <Filter catalogueFilter={catalogueFilter}/>
+      <Filter catalogueFilter={catalogueFilter} catalogue={catalogue} dispatch={dispatch} />
     </>
   );
 }
