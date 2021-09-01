@@ -78,7 +78,7 @@ function cataloguePage({ match }) {
   return (
     <>
       <div className="header">
-        <span className="btn" role="button" tabIndex={0} onKeyDown={handleDisplay} onClick={() => handleDisplay()}>Ingrdients</span>
+        <span className="btn" role="button" tabIndex={0} onKeyDown={handleDisplay} onClick={() => handleDisplay()}>Ingredients</span>
         <span className="btn" role="button" tabIndex={0} onKeyDown={handleDisplay} onClick={() => handleDisplay()}>Instructions</span>
       </div>
       <div className="card">
