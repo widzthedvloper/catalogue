@@ -3,8 +3,8 @@ import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import {
   selectCatalogue,
-} from '../catalogue/catalogueSlice';
-import NotFoundPage from '../NotFoundPage';
+} from '../../catalogue/Reducer/catalogueSlice';
+import NotFoundPage from '../../NotFoundPage';
 
 function cataloguePage({ match }) {
   const { id } = match.params;

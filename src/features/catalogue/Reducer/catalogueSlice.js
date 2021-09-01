@@ -1,6 +1,6 @@
 /* eslint-disable no-param-reassign */
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { fetchCatalogue } from './catalogueAPI';
+import { fetchCatalogue } from '../API/catalogueAPI';
 
 const initialState = {
   value: [],

@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import './catalogue.css';
+import '../catalogue.css';
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
@@ -7,7 +7,7 @@ import {
   fetchAsync,
   filterCatalogue,
   selectCatalogue,
-} from './catalogueSlice';
+} from '../Reducer/catalogueSlice';
 
 export function CatalogueComponent() {
   const catalogue = useSelector(selectCatalogue);
