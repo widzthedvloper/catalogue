@@ -5,8 +5,10 @@ import {
   selectCatalogue,
 } from '../../catalogue/Reducer/catalogueSlice';
 import NotFoundPage from '../../NotFoundPage';
+import PropTypes from 'prop-types';
 
 function cataloguePage({ match }) {
+  console.log(match);
   const { id } = match.params;
   const catalogue = useSelector(selectCatalogue);
   const meal = catalogue.find(singleMeal => singleMeal.idMeal === id);
@@ -99,6 +101,10 @@ function cataloguePage({ match }) {
       </Link>
     </>
   );
+}
+
+cataloguePage.propTypes = {
+  match: PropTypes.object,
 }
 
 export default cataloguePage;

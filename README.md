@@ -52,6 +52,7 @@
 3. Run `npm install or npm i`
 4. Open the codebase using any code editor of your choice, preferably, visual studio code editor.
 5. Open the vscode terminal and run the application by typing `npm start` and hit enter.
+6. Run `npm test` to test the app
 
 ## Contributing
 
