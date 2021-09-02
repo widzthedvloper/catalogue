@@ -1,15 +1,18 @@
-const initialState = { 
-    meal: [], 
-}; 
+
+const initialState = {
+  catalogue: [],
+  status: 'idle',
+};
 
 const catalogueReducer = (state = initialState, action) => { 
     switch (action.type) { 
         case 'FETCH_CATALOGUE': 
-        return { 
-            ...state, 
-            meal: action.payload, 
-        }; 
-        default: return state; 
+        return  {
+            ...state,
+            catalogue: action.payload
+        };
+        default: 
+        return state; 
     } 
 }; 
 

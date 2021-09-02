@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import { Provider } from 'react-redux';
 import App from './App';
-// import { store } from './app/store';
 import * as serviceWorker from './serviceWorker';
 import { createStore } from 'redux'; 
 import reducers from './redux/reducer';
 
-const store = createStore(reducers);
+const store = createStore(reducers, 
+// eslint-disable-next-line no-underscore-dangle
+window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
 ReactDOM.render(
   <React.StrictMode>

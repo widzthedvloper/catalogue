@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import {
-  selectCatalogue,
-} from '../../catalogue/Reducer/catalogueSlice';
 import NotFoundPage from '../../NotFoundPage';
 import PropTypes from 'prop-types';
 
 function cataloguePage({ match }) {
   console.log(match);
   const { id } = match.params;
-  const catalogue = useSelector(selectCatalogue);
+  const catalogue = useSelector(state => state.catalogue.catalogue);
+  console.log(catalogue);
   const meal = catalogue.find(singleMeal => singleMeal.idMeal === id);
 
   if (!meal) return <NotFoundPage />;

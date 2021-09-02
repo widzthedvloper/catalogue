@@ -3,21 +3,27 @@ import '../catalogue.css';
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import {
-  fetchAsync,
-  selectCatalogue,
-} from '../Reducer/catalogueSlice';
+import { updateCatalogue } from '../../../redux/action';
 import Filter, { myFilterArray } from '../Filter/Filter';
 
 export function CatalogueComponent() {
-  const catalogue = useSelector(selectCatalogue);
   const dispatch = useDispatch();
-
   const [catalogueFilter, setCatalogueFilter] = useState('');
 
   useEffect(() => {
-    dispatch(fetchAsync());
+    fetchAsync()
+    .then(res => {
+      dispatch(updateCatalogue(res));
+    });
   }, []);
+
+  const fetchAsync = async () => {
+    const catalogue = await fetch('https://www.themealdb.com/api/json/v1/1/search.php?f=b')
+    const temp = await catalogue.json();
+    return temp.meals;
+  }
+
+  const catalogue = useSelector(state => state.catalogue.catalogue);
 
   const renderedCatalogue = catalogue.map(mealInfo => (
     <div key={mealInfo.idMeal} className="card">
@@ -31,6 +37,7 @@ export function CatalogueComponent() {
       <Link to={`/meal-page/${mealInfo.idMeal}`}>More details ...</Link>
     </div>
   ));
+
   return (
     <>
       <header className="header">
