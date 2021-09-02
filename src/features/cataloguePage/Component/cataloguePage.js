@@ -8,7 +8,6 @@ function cataloguePage({ match }) {
   console.log(match);
   const { id } = match.params;
   const catalogue = useSelector(state => state.catalogue.catalogue);
-  console.log(catalogue);
   const meal = catalogue.find(singleMeal => singleMeal.idMeal === id);
 
   if (!meal) return <NotFoundPage />;
